@@ -11,17 +11,52 @@
         <!-- Player -->
         <div id="player"></div>
 
-        <!-- World Decorations -->
-        <div class="tree" style="top: 100px; left: 200px;"></div>
-        <div class="tree" style="top: 300px; left: 500px;"></div>
-        <div class="rock" style="top: 400px; left: 100px;"></div>
-        <div class="house" style="top: 50px; left: 600px;"></div>
+        <!-- Mini-Game Areas -->
+        <div class="mini-game-area" style="top: 100px; left: 100px;" data-game="archery">Archery</div>
+        <div class="mini-game-area" style="top: 100px; left: 300px;" data-game="running">Running Race</div>
+        <div class="mini-game-area" style="top: 100px; left: 500px;" data-game="swimming">Swimming</div>
+        <div class="mini-game-area" style="top: 300px; left: 100px;" data-game="obstacle">Obstacle Course</div>
+        <div class="mini-game-area" style="top: 300px; left: 300px;" data-game="memory">Memory Game</div>
+        <div class="mini-game-area" style="top: 300px; left: 500px;" data-game="shooting">Shooting Gallery</div>
 
-        <!-- Archery Mini-Game -->
-        <button id="start-archery">Start Archery</button>
-        <div id="archery-game" style="display: none;">
-            <div id="target"></div>
+        <!-- Mini-Game Banner -->
+        <div id="mini-game-banner"></div>
+
+        <!-- Exit Button -->
+        <button id="exit-button">Exit</button>
+
+        <!-- Archery Game -->
+        <div id="archery-game" class="mini-game" style="display: none;"></div>
+
+        <!-- Running Race -->
+        <div id="running-game" class="mini-game" style="display: none;">
+            <div class="obstacle" style="top: 200px; left: 300px;"></div>
+            <div class="obstacle" style="top: 400px; left: 500px;"></div>
         </div>
+
+        <!-- Swimming -->
+        <div id="swimming-game" class="mini-game" style="display: none;">
+            <div class="wave"></div>
+            <div class="coin" style="top: 100px; left: 200px;"></div>
+            <div class="coin" style="top: 300px; left: 400px;"></div>
+        </div>
+
+        <!-- Obstacle Course -->
+        <div id="obstacle-game" class="mini-game" style="display: none;">
+            <div class="obstacle" style="top: 100px; left: 200px;"></div>
+            <div class="obstacle" style="top: 300px; left: 400px;"></div>
+        </div>
+
+        <!-- Memory Game -->
+        <div id="memory-game" class="mini-game" style="display: none;">
+            <div class="memory-card" data-value="1"></div>
+            <div class="memory-card" data-value="2"></div>
+            <div class="memory-card" data-value="1"></div>
+            <div class="memory-card" data-value="2"></div>
+        </div>
+
+        <!-- Shooting Gallery -->
+        <div id="shooting-game" class="mini-game" style="display: none;"></div>
     </div>
     <script src="script.js"></script>
 </body>
